@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMDR Eye Movement Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>เครื่องกรอกตา EMDR</h1>
+    
+    <div class="settings">
+        <label>ความเร็ว (รอบต่อนาที): 
+            <input type="number" id="speed" value="30" min="10" max="60">
+        </label>
+        <label>ระยะเวลา (วินาที): 
+            <input type="number" id="duration" value="60" min="30" max="300">
+        </label>
+        <button onclick="startEMDR()">เริ่ม</button>
+        <button onclick="pauseEMDR()">หยุดชั่วคราว</button>
+        <button onclick="stopEMDR()">หยุด</button>
+        <p id="timer">เวลาที่ผ่านไป: 0 วินาที</p>
+    </div>
+
+    <div class="screen">
+        <div class="ball"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
